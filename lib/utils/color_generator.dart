@@ -11,9 +11,9 @@ class ColorGenerator {
   /// Generates a random color.
   Color generate() {
     const a = 255;
-    final r = _random.nextInt(255);
-    final g = _random.nextInt(255);
-    final b = _random.nextInt(255);
+    final r = _random.nextInt(256);
+    final g = _random.nextInt(256);
+    final b = _random.nextInt(256);
 
     return Color.fromARGB(a, r, g, b);
   }
